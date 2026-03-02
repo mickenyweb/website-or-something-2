@@ -4,8 +4,8 @@
 <meta property="og:title" content="saites">
 <meta property="og:description" content="isso ai">
 <meta property="og:image" content="https://raw.githubusercontent.com/mickenyweb/website-or-something-2/refs/heads/main/bleh.gif">
-<meta property="og:image:width" content="1080">
-<meta property="og:image:height" content="1350">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="950">
 <meta name="theme-color" content="#f5ef42">
 <link type="application/json+oembed" href="embed.json">
 <meta name="twitter:card" content="summary_large_image">
@@ -20,32 +20,59 @@ html {
     text-shadow: rgba(0, 0, 0, 0.4) 4px 4px;
 }
 
-
-img	{
-	float: right;
-	margin-left: 15px;
-	width: 600px;
-	height: 200px;  
-}
-
 @font-face {
 	font-family: rasbiscos;
 	src: url(rasbiscos.woff2);
 }
+			
+body {
+	background-image: url(bg.gif); 
+    background-color:#00002f;
+	color:#ff00ff; 
+    font-size:200%;
+    font-family:rasbiscos;
+}
 
-body {background-color:#00002f;}
+#overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(1px);
+  z-index: 1;
+}
+
+.content, h1, p, kenyverde, footer, img, div {
+	position: relative;
+	z-index: 2;
+}
+
 h1 {color:#ffffff;}
 p {color: #ffffff;}
 
 kenyverde   {
-    color:#00ff00; 
-    font-size:400%;
+    color: #00ff00; 
+    font-size: 400%;
 }
-			
-body {
-    color:#ff00ff; 
-    font-size:200%;
-    font-family:rasbiscos;
+
+.bleh	{
+	float: right;
+	margin-left: 15px;
+	width: 600px;
+	height: 200px;
+	transition: transform 0.3s ease;	
+	cursor: pointer;
+}
+
+.bleh:hover	{
+	transform: scale(1.2); 
+}
+
+.bleh:active {
+	transform: scale(0.9);
+	transition: transform 0.2s ease;
 }
 		
 .idk {
@@ -56,38 +83,43 @@ body {
     background-color: #ff00ff;
     color: white;
     text-align: center;
-    padding: 15px;
+    padding: 9px;
 }
 
 .gif1 {
-      position:absolute;
-      left:40px;
-      top:40px
-      }
-
-
+	position:absolute;
+    left:40px;
+    top:40px
+}
 </style>
 </head>
-<body style="background-image: url(bg.gif);">
+<body>
+
+<div id="overlay"></div>
+
 <center>
 <kenyverde>☼ kenyandmick.com ►</kenyverde>
 <h1 style="color:#ffff00;">definitivamente um site</h1>
 </center>
 
-<marquee bgcolor="#00002f">
+<div class="content">
+<marquee style="position=fixed;" bgcolor="#00002f">
 <p>☺☻♥♦♣♠•◘○◙♂♀♪♫☼►◄↕‼</p>
 </marquee>
+
 <hr width="100%" size="2" color="#ffffff">
 <p>abcdefghijklmnopqrstuvwxyz</p>
 <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
 <p>1234567890</p>
 <p>!@#$%¨&*(){}[]^~"'|\/><=-+áááá</p>
 <br><br><br><br>
+</div>
 
-<img style="position:absolute; left:800px; top:450px;" src="bleh.gif">
+<img class="bleh" style="position:absolute; left:800px; top:460px;" src="bleh.gif">
+<img style="position:fixed; left:100px; top:272px;" src="achemy.gif">
 
-<div style="position:absolute; left:800px; top:450px;" float: right;">aaaaaaaaa</div>
-
+<div style="position:absolute; left:130px; top:272px; color:#00ff00; font-size: 50%;" float: right;">olaa</div>
+<div style="position:absolute; left:800px; top:460px;" float: right;">aaaaaaaaa</div>
 
 <footer class="idk">
 <p>oiii :P</p>
