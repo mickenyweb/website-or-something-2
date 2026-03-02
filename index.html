@@ -13,7 +13,7 @@
 <html>
 <head>
 <title>keny e mick ☻</title>
-<link rel="icon" href="icon.png" type="image/x-icon">
+<link id="faviconchange" rel="icon" href="icon1.png" type="image/x-icon">
 <style>
 
 html {
@@ -162,6 +162,17 @@ img {
 }
 </style>
 </head>
+
+<script> 
+const favicons = [ 
+	"icon1.png", 
+	"icon2.png"
+]; 
+const randomFavicon = favicons[Math.floor(Math.random() * favicons.length)];
+
+document.getElementById("faviconchange").setAttribute("href", randomFavicon); 
+</script>
+
 <body>
 
 <div id="overlay"></div>
